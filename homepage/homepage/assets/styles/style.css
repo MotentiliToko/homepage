@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: relative;
+  width: 1440px;
+  height: 1243px;
+  background: #faf8ed;
+}
+
+.header {
+  width: 1440px;
+  height: 102px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  width: 98px;
+  height: 35px;
+  left: 135px;
+  top: 33px;
+}
+
+.navigation {
+  position: absolute;
+  padding: 0px;
+  width: 447px;
+  height: 16px;
+  left: 305px;
+  top: 39px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #2e476b;
+}
+
+.home {
+  width: 49px;
+  height: 16px;
+  margin-right: 25px;
+}
+
+.about {
+  width: 72px;
+  height: 16px;
+  margin-right: 25px;
+}
+
+.destin {
+  width: 101px;
+  height: 16px;
+  margin-right: 25px;
+}
+
+.tours {
+  width: 45px;
+  height: 16px;
+  margin-right: 25px;
+}
+
+.blog {
+  width: 36px;
+  height: 16px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 170px;
+  height: 54px;
+  right: 135px;
+  top: 24px;
+  border: 1.4px solid #f66f4d;
+  border-radius: 27px;
+  gap: 6px;
+}
+
+.book {
+  color: #f66f4d;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.icon {
+  width: 16px;
+  height: 15px;
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 527px;
+  height: 160px;
+  left: 457px;
+  right: 456px;
+  margin-top: 89px;
+  margin-bottom: 51px;
+}
+
+h1 {
+  width: 457px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 66px;
+  color: #2d3134;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 16px;
+}
+
+.reason {
+  width: 480px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #5b5f62;
+  margin-top: 16px;
+  margin-left: 33px;
+  margin-right: 33px;
+  margin-bottom: 62px;
+}
+
+.cities {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 527px;
+  height: 34px;
+  gap: 14px;
+}
+
+.london {
+  padding: 10px 20px;
+  gap: 10px;
+  width: 92px;
+  height: 34px;
+  background: #2d3134;
+  border-radius: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.bangkok {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 100px;
+  height: 34px;
+  border: 1px solid #3d3d3d;
+  border-radius: 30px;
+}
+
+.england {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 97px;
+  height: 34px;
+  border: 1px solid #3d3d3d;
+  border-radius: 30px;
+}
+
+.singapore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 112px;
+  height: 34px;
+  border: 1px solid #3d3d3d;
+  border-radius: 30px;
+}
+
+.italy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 70px;
+  height: 34px;
+  border: 1px solid #3d3d3d;
+  border-radius: 30px;
+}
+
+.grid-gallery {
+  width: 1440px;
+  height: 520px;
+  margin-top: 402px;
+  padding: 0px 135px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "First Second Second Third Third"
+  "Fourth Second Second Fifth Sixth";
+}
+
+.grid-first {
+  grid-area: First;
+}
+
+.grid-second {
+  grid-area: Second;
+}
+
+.grid-third {
+  grid-area: Third;
+}
+
+.grid-fourth {
+  grid-area: Fourth;
+  margin-top: -4px;
+}
+
+.grid-fifth {
+  grid-area: Fifth;
+  margin-top: -17px;
+}
+
+.grid-sixth {
+  grid-area: Sixth;
+  margin-top: -17px;
+}
+
+.footer {
+  width: 1440px;
+  height: 315px;
+  margin-top: 0px;
+  padding: 79px 135px 55px 135px;
+  display: flex;
+  flex-direction: row;
+  gap: 275px;
+}
+
+.logo-notice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-notice img {
+  width: 98px;
+  height: 35px;
+}
+
+.logo-notice span {
+  width: 141px;
+  height: 52px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5B5F62;
+}
+
+.menu {
+  width: 754px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.titles {
+  width: 754px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.titles a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2D3134;
+}
+
+.resource {
+  margin-right: 114px;
+}
+
+.travel {
+  margin-right: 144px;
+}
+
+.company {
+  margin-right: 120px;
+}
+
+.app {
+  margin-right: 48px;
+  width: 71px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.title-description {
+  width: 754px;
+  height: 136px;
+  display: flex;
+  flex-direction: row;
+  gap: 113px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 34px;
+  color: #676A6C;
+}
+
+.resour-desc {
+  width: 92px;
+  height: 136px;
+}
+
+.travel-desc {
+  width: 115px;
+  height: 136px;
+}
+
+.comp-desc {
+  width: 89px;
+  height: 136px;
+}
+
+.app-desc {
+  display: flex;
+  flex-direction: column;
+  width: 119px;
+  height: 68px;
+  margin-bottom: 68px;
+}
